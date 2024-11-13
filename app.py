@@ -3,11 +3,11 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-app.mount("/src", StaticFiles(directory="src"), name="src")
-
-@app.get("/")
+@app.get("/api")
 async def index():
    return {
       "message": "Hello World",
       "code":11
       }
+
+app.mount('/', StaticFiles(directory="src", html=True), name="src")
