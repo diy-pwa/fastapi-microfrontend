@@ -10,4 +10,4 @@ async def index():
       "code":11
       }
 
-app.mount('/', StaticFiles(directory="src", html=True), name="src")
+app.mount('/', StaticFiles(directory=".", html=True), name="src")
