@@ -4,5 +4,7 @@ TLDR;
 
 ```bash
 pip install -r requirements.txt
-
+fastapi dev app.py
 ```
+
+You can see microfrontend docs by adding markdown files and refering to them in the `src/index.html`. You can see api docs by surfing to /docs.
